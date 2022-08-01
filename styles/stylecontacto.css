@@ -6,7 +6,7 @@
     display: inline;
 }
 body {
-    background-color: rgb(209, 129, 100);
+    background-image: linear-gradient(to top, orange, brown);
     padding: 5px;
 }
 .detallesLogo {

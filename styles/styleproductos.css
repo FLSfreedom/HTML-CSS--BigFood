@@ -6,7 +6,7 @@
     display: inline;
 }
 body {
-    background-color: rgb(209, 129, 100);
+    background-image: linear-gradient(to top, orange, brown);
 }
 .ubicacionLista {
     text-align: center;
@@ -132,6 +132,10 @@ h2 {
     font-weight: bold;
     list-style: none;
     font-style: italic;
+}
+#estiloLista:hover {
+    transform: rotate(360deg);
+    transition: 1s;
 }
 h1 {
     text-align: center;
