@@ -15,12 +15,20 @@ body {
     display: inline;
     border-radius: 15%;
 }
+nav ul li:hover {
+    transition: 3s;
+    background-color: rgb(171, 241, 91);
+}
+nav ul li {
+    border-radius: 25%;
+}
 .Navegador {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 20px;
     background-color: rgba(212, 191, 73, 0.801);
+    border-radius: 15%;
 }
 .header {
     background-image: url(../images/burgerandpizza.jpg);
@@ -111,6 +119,18 @@ p {
     height: 95%;
     object-fit: fill; 
 }
+.sectionTitulo h1 {
+    animation: animacion_titulo 5s infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+@keyframes animacion_titulo {
+    0% {text-align: left;}
+    25% {text-align: center;}
+    50% {text-align: right;}
+    75% {text-align: center;}
+    100% {text-align: left;}
+}    
 @media screen and (max-width: 1023px) {
     .grid {
         display: grid;
@@ -163,5 +183,15 @@ p {
     }
     .grid .footer {
         grid-column: 1/2;
+    }
+    .h1right {
+        color:rgb(236, 46, 25);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        background-color: rgba(212, 191, 73, 0.801);
+        border-radius: 25px;
+        text-align: center;
+        display: none;
     }
 }

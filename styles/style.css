@@ -14,12 +14,20 @@ body {
 #estiloInline {
     display: inline;
 }
+nav ul li:hover {
+    transition: 3s;
+    background-color: rgb(171, 241, 91);
+}
+nav ul li {
+    border-radius: 25%;
+}
 .Navegador {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
     font-size: 20px;
     background-color: rgba(212, 191, 73, 0.801);
+    border-radius: 15%;
 }
 .header {
     background-image: url(../images/burgerandpizza.jpg);
@@ -208,5 +216,15 @@ text-align: center;
     }
     .header {
         background-image: url(../images/burgerandpizza.jpg);
+    }
+    .h1right {
+        color:rgb(236, 46, 25);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        background-color: rgba(212, 191, 73, 0.801);
+        border-radius: 25px;
+        text-align: center;
+        display: none;
     }
 }
