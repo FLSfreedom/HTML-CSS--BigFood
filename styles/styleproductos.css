@@ -164,6 +164,11 @@ footer {
 }
 #footerEnlace:hover {
     color: chocolate;
+    background-color:rgb(99, 82, 44);
+    border-radius: 15%;
+}
+footer:hover {
+    transform: scale(1,2);
 }
 #footerEnlace {
     outline: none;
