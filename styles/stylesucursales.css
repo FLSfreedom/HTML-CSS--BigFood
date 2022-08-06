@@ -16,7 +16,7 @@ body {
     border-radius: 15%;
 }
 nav ul li:hover {
-    transition: 3s;
+    transition: 1s;
     background-color: rgb(171, 241, 91);
 }
 nav ul li {
