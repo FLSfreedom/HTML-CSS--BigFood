@@ -114,11 +114,13 @@ h1 {
 dt {
     text-align: center;
     font-size: 32px;
-    animation: animacion_dt 2s infinite;
+    animation: skewX 2s infinite;
     animation-timing-function: linear;
 }
-dt:hover {
-    transform: scale(2,2);
+dd:hover {
+    transform: scale(1.1,1.1);
+    font-weight: bold;
+    color: rgb(56, 110, 49);
 }
 dl {
     text-align: center;
@@ -139,11 +141,13 @@ dl {
     75% {text-align: center;}
     100% {text-align: left;}
 }    
-@keyframes animacion_dt {
-    0% {color: rgb(10, 34, 3);}
-    50% {color: rgb(236, 46, 25);}
-    100% {color: rgb(10, 34, 3);}
-}   
+@keyframes skewX {
+    0% {transform: skew(0deg); color: rgb(10, 34, 3);}
+    25% {transform: skew(-30deg);}
+    50% {transform: skew(0deg); color: rgb(236, 46, 25);}
+    75% {transform: skew(30deg);}
+    100% {transform: skew(0deg); color: rgb(10, 34, 3);}
+}
 @media screen and (max-width: 992px) {
     .grid {
         display: grid;
