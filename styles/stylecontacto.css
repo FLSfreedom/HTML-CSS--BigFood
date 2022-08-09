@@ -96,7 +96,7 @@ ul {
 h2 {
     text-align: center;
     font-size: 32px;
-    animation: animacion_h2 5s infinite;
+    animation: animacion_h2 2s infinite;
     animation-timing-function: linear;
 }
 dl {
@@ -134,7 +134,7 @@ dl {
     50% {color: rgb(236, 46, 25);}
     100% {color: rgb(10, 34, 3);}
 }    
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 992px) {
     #estiloInline {
         display: block;
     }
@@ -150,13 +150,6 @@ dl {
         align-items: center;
     }
     .h1right {
-        color:rgb(236, 46, 25);
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-style: italic;
-        font-weight: bold;
-        background-color: rgba(212, 191, 73, 0.801);
-        border-radius: 25px;
-        text-align: center;
         display: none;
     }
     .header {
