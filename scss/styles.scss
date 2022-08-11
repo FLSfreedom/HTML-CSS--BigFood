@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(to top, orange, brown);
+}
+.detallesLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    display: inline;
+}
+#estiloInline {
+    display: inline;
+}
+nav ul li:hover {
+    transition: 1s;
+    background-color: rgb(171, 241, 91);
+}
+nav ul li {
+    border-radius: 25%;
+}
+.Navegador {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(212, 191, 73, 0.801);
+    border-radius: 15%;
+}
+.header {
+    background-image: url(../images/burgerandpizza.jpg);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color:rgb(236, 46, 25);
+}
+a:hover {
+    color: chocolate;
+}
+.section1 {
+    color:rgb(236, 46, 25);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgba(212, 191, 73, 0.801);
+    border-radius: 25px;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+}
+p {
+    font-size: 28px;
+}
+#tamanioImages {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+    border-radius: 25px;
+}
+#tamanioImages3 {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+    border-radius: 25px;
+}
+footer {
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 20px;
+    align-items: center;
+    margin: 5px;
+}
+.grid .header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.grid footer {
+    grid-column: 1/4;
+}
+section {
+    width: 100%;
+    height: 100%;
+}
+.grid #section4 {
+    grid-column: 1/3;
+}
+#footerEnlace:hover {
+    color: chocolate;
+    background-color:rgb(99, 82, 44);
+    border-radius: 15%;
+}
+footer:hover {
+    transform: scale(1,2);
+}
+.h1right {
+color:rgb(236, 46, 25);
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: italic;
+font-weight: bold;
+background-color: rgba(212, 191, 73, 0.801);
+border-radius: 25px;
+text-align: center;
+}
+@media screen and (max-width: 1023px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 20px;
+        align-items: center;
+        margin-left: 12px;
+    }
+    #estiloInline {
+        display: block;
+    }
+    #tamanioImages {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; 
+        border-radius: 25px;
+    }
+    .grid #section4 {
+        grid-column: 1/3;
+    }
+    .grid .section1 {
+        grid-column: 1/2;
+    }
+    .grid .section2 {
+        grid-column: 2/3;
+    }
+    .grid .section3 {
+        grid-column: 1/2;
+    }
+    .grid .section5 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .grid .header {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .grid .footer {
+        grid-column: 1/3;
+    }
+    #tamanioImages3 {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; 
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 20px;
+        align-items: center;
+        margin-left: 20px;
+    }
+    #estiloInline {
+        display: block;
+    }
+    #tamanioImages {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; 
+        border-radius: 25px;
+    }
+    .grid #section4 {
+        grid-column: 1/2;
+    }
+    .grid .section1 {
+        grid-column: 1/2;
+    }
+    .grid .section2 {
+        grid-column: 1/2;
+    }
+    .grid .section3 {
+        grid-column: 1/2;
+    }
+    .grid .section5 {
+        grid-column: 1/2;
+    }
+    .grid .header {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .grid .footer {
+        grid-column: 1/2;
+    }
+    #tamanioImages3 {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; 
+        border-radius: 25px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header {
+        background-image: url(../images/burgerandpizza.jpg);
+    }
+    .h1right {
+        color:rgb(236, 46, 25);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        background-color: rgba(212, 191, 73, 0.801);
+        border-radius: 25px;
+        text-align: center;
+        display: none;
+    }
+}
