@@ -149,7 +149,7 @@ p {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr 2fr 0.1fr;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
     grid-row-gap: 20px; }
   #estiloInline {
     display: block; }
@@ -170,7 +170,7 @@ p {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr 2fr 0.1fr;
+    grid-template-rows: 0.2fr 1fr 0.1fr;
     grid-row-gap: 20px; }
   #estiloInline {
     display: block; }
