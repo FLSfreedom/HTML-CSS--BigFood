@@ -80,6 +80,7 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
+    padding-right: 5px;
 }
 footer {
     text-align: center;
@@ -145,7 +146,7 @@ p {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 0.1fr;
-        grid-row-gap: 20px;
+        grid-row-gap:10px;
     }
     #estiloInline {
         display: block;
@@ -153,8 +154,8 @@ p {
     #grid2 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-row-gap: 20px;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-row-gap: 10px;
     }
     @keyframes scale {
         0% {color: rgb(10, 34, 3);}
@@ -167,7 +168,7 @@ p {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 0.1fr;
-        grid-row-gap: 20px;
+        grid-row-gap: 10px;
     }
     #estiloInline {
         display: block;
@@ -175,8 +176,8 @@ p {
     #grid2 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-row-gap: 20px;
+        grid-template-rows: 1fr 0.2fr;
+        grid-row-gap: 10px;
     }
     header {
         display: flex;
