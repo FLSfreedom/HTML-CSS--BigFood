@@ -29,30 +29,42 @@
                 <h1 class="h1right">Big Food</h1>
             </div>
         </header>
-        <section class="section1">
-            <h1>Big Food</h1>
-            <p>¡Un lugar único! Acá es posible encontrar 
-                tus comidas favoritas en el tamaño que 
-                corresponde ¡Extra grande! 
-            </p>
-            <p>Explorá desde este sitio nuestra oferta 
-                en comidas rápidas enormes y, si te gusta 
-                alguna, podés hacer tu pedido desde acá 
-                mismo.
-            </p>
-        </section>
-        <section  class="section2">
-            <img src="images/imagenhome1.jpg" alt="Hamburguesas y pizzas" id="tamanioImages">
-        </section>
-        <section class="section3">
-            <img src="images/imagenhome2.jpg" alt="Pizzas y Hamburguesas" id="tamanioImages">
-        </section>
-        <section id="section4">
-            <img src="images/imagenhome3 .jpg" alt="Empanadas" id="tamanioImages3">
-        </section>
-        <section class="section5">
-            <img src="images/imagenhome4.jpg" alt="Carnes" id="tamanioImages">
-        </section>
+        <div class="container-fluid">
+            <div class="row" id="grid2">
+                <section class="col-lg-4">
+                    <h1>Big Food</h1>
+                    <p>¡Un lugar único! Acá es posible que encuentres tus comidas favoritas en el tamaño que corresponde ¡Extra grande! </p>
+                    <p>Explorá desde este sitio nuestra oferta en comidas rápidas enormes y, si te gusta alguna, podés hacer tu pedido desde acá mismo.</p>
+                </section>
+                <div class="col-lg-8">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/imagenhome1.jpg" class="d-block w-100" alt="Imagen de comida">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/imagenhome2.jpg" class="d-block w-100" alt="Imagen de comida">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/imagenhome3 .jpg" class="d-block w-100" alt="Imagen de comida">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/imagenhome4.jpg" class="d-block w-100" alt="Imagen de comida">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <a href="https://google.com" target="_blank" id="footerEnlace">Buscar en Google</a>
         </footer>

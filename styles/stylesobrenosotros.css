@@ -61,7 +61,7 @@ footer {
     border-radius: 15%;
 }
 footer:hover {
-    transform: scale(1,2);
+    transform: scale(1,1.5);
 }
 .h1right {
     color:rgb(236, 46, 25);
