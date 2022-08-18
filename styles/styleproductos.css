@@ -61,19 +61,22 @@ div.row div {
   font-weight: bold;
   border-radius: 25px;
   text-align: center;
-  background: linear-gradient(to top, darksalmon, lightgreen);
   padding: auto;
-  opacity: 85%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #0a2203; }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-h1 {
-  text-align: center;
-  font-size: 40px;
+.h1right, h1 {
   color: #ec2e19;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+  background-color: rgba(212, 191, 73, 0.801);
+  border-radius: 25px;
+  text-align: center; }
+
+h1 {
+  font-size: 40px;
+  background-color: transparent;
+  border-radius: 0%; }
 
 footer {
   text-align: center; }
@@ -91,24 +94,15 @@ footer {
   background-color: #63522c;
   border-radius: 15%; }
 
-.h1right {
-  color: #ec2e19;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  background-color: rgba(212, 191, 73, 0.801);
-  border-radius: 25px;
-  text-align: center; }
-
 h2 {
   text-align: center;
-  color: brown !important; }
+  color: #ec2e19 !important; }
 
 p {
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 28px;
-  color: brown; }
+  color: #ec2e19; }
 
 .tamanioImages {
   position: relative;
@@ -123,6 +117,46 @@ p {
   animation-timing-function: linear;
   position: relative; }
 
+.div--tono1 {
+  background-image: linear-gradient(to top, #e9967a, #90ee90);
+  opacity: 85%; }
+
+.div--tono2 {
+  background-image: linear-gradient(to top, #d6886e, #eba81a);
+  opacity: 85%; }
+
+.div--tono3 {
+  background-image: linear-gradient(to top, #c7785e, #3276ce);
+  opacity: 85%; }
+
+.div--tono4 {
+  background-image: linear-gradient(to top, #bb694e, #2fbb85);
+  opacity: 85%; }
+
+.div--tono5 {
+  background-image: linear-gradient(to top, #ad5d42, #bdc918);
+  opacity: 85%; }
+
+.menuDesktop {
+  padding-left: 0%;
+  border-radius: 25px !important; }
+  .menuDesktop button {
+    border-radius: 25px;
+    background-image: linear-gradient(to top, brown, beige, lightblue);
+    color: #2c4ee7;
+    font-size: 40px; }
+    .menuDesktop button:hover {
+      color: #ff9900; }
+    .menuDesktop button:focus {
+      color: #ff9900; }
+
+.dropdown-menu {
+  background-color: #80dfbb;
+  opacity: 70%; }
+  .dropdown-menu a {
+    color: #1d410b;
+    font-weight: bold; }
+
 @keyframes animacion_titulo {
   0% {
     text-align: left; }
@@ -136,101 +170,46 @@ p {
   100% {
     text-align: left; } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 992px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
-    grid-column-gap: 8px;
-    grid-row-gap: 20px;
-    align-items: center;
-    margin-left: 12px;
-    height: 4200px; }
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.1fr 22fr 0.1fr;
+    grid-row-gap: 10px; }
   #estiloInline {
     display: block; }
-  #tamanioImages {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    border-radius: 25px; }
-  .grid .header {
-    grid-column: 1/3;
-    grid-row: 1/2; }
-  .grid .footer {
-    grid-column: 1/3; }
-  .grid .divtitulo1 {
-    grid-column: 1/3; }
-  .grid .section1 {
-    grid-column: 1/3; }
-  .grid .section2 {
-    grid-column: 1/2; }
-  .grid .section3 {
-    grid-column: 2/3; }
-  .grid .section4 {
-    grid-column: 1/2; }
-  .grid .section5 {
-    grid-column: 2/3; }
-  .grid .section6 {
-    grid-column: 1/2; }
-  .grid .section7 {
-    grid-column: 2/3; }
-  .grid .section8 {
-    grid-column: 1/2; }
-  .grid .section9 {
-    grid-column: 2/3; }
-  .grid .section10 {
-    grid-column: 1/3; }
-  .grid .section11 {
-    grid-column: 1/2; }
-  .grid .section12 {
-    grid-column: 2/3; }
-  .ubicacionLista {
-    text-align: center;
-    background-color: cadetblue;
-    border-radius: 40%;
-    position: relative;
-    top: 17%; } }
+  #grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr 0.2fr 1fr 1fr 0.2fr 1fr 0.2fr 1fr 1fr;
+    grid-row-gap: 10px; }
+  .menuDesktop {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 5fr 0.2fr;
-    grid-column-gap: 8px;
-    grid-row-gap: 20px;
-    align-items: center;
-    margin-left: 20px; }
+    grid-template-rows: 0.2fr 0.1fr 22fr 0.1fr;
+    grid-row-gap: 10px; }
   #estiloInline {
     display: block; }
-  .grid .header {
-    grid-column: 1/2;
-    grid-row: 1/2; }
-  .grid .footer {
-    grid-column: 1/2; }
-  #tamanioImages {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    border-radius: 25px; }
+  #grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr 0.2fr 1fr 1fr 0.2fr 1fr 0.2fr 1fr 1fr;
+    grid-row-gap: 10px; }
   header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
   .header {
-    background-image: url(../images/burgerandpizza.jpg); }
-  .ubicacionLista {
-    text-align: center;
-    background-color: cadetblue;
-    border-radius: 40%;
-    position: relative;
-    top: 0%; }
-  .h1right {
-    color: #ec2e19;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    background-color: rgba(212, 191, 73, 0.801);
-    border-radius: 25px;
-    text-align: center;
+    background-image: url(../images/burgerandpizza.jpg);
+    position: static;
+    top: 0;
+    z-index: 999; }
+  .hright {
+    display: none; }
+  .menuDesktop {
     display: none; } }
