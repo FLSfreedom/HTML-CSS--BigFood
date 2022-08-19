@@ -35,7 +35,7 @@ nav ul li {
 
 .header {
   background-image: url(../images/burgerandpizza.jpg);
-  position: sticky;
+  position: static;
   top: 0;
   z-index: 999; }
 
@@ -50,7 +50,8 @@ a {
   text-decoration: none;
   padding: 2px 1px 0;
   color: #ec2e19;
-  font-style: italic; }
+  font-style: italic;
+  font-weight: none; }
 
 a:hover {
   color: chocolate; }
@@ -152,10 +153,13 @@ p {
 
 .dropdown-menu {
   background-color: #80dfbb;
-  opacity: 70%; }
+  opacity: 70%;
+  height: 100%;
+  object-fit: fill; }
   .dropdown-menu a {
     color: #1d410b;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 30px; }
 
 @keyframes animacion_titulo {
   0% {

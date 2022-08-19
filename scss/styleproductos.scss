@@ -30,17 +30,20 @@ nav {
         }
     }
 }
+@mixin estiloTexto ($italica, $negrita) {
+    font-style: $italica;
+    font-weight: $negrita;
+}
 .Navegador {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
+    @include estiloTexto(italic, bold);
     font-size: 20px;
     background-color: rgba(212, 191, 73, 0.801);
     border-radius: 15%;
 }
 .header {
     background-image: url(../images/burgerandpizza.jpg);
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 999;
 }
@@ -55,7 +58,7 @@ a {
     text-decoration: none;
     padding: 2px 1px 0;
     color:rgb(236, 46, 25);
-    font-style: italic;
+    @include estiloTexto(italic, none);
 }
 a:hover {
     color: chocolate;
@@ -63,8 +66,7 @@ a:hover {
 div.row {
     div{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-style: italic;
-        font-weight: bold;
+        @include estiloTexto(italic, bold);
         border-radius: 25px;
         text-align: center;
         padding: auto;
@@ -74,8 +76,7 @@ div.row {
 .h1right {
     color:rgb(236, 46, 25);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
+    @include estiloTexto(italic, bold);
     background-color: rgba(212, 191, 73, 0.801);
     border-radius: 25px;
     text-align: center;
@@ -174,11 +175,14 @@ $fondos: (
 .dropdown-menu {
     background-color: #80dfbb;
     opacity: 70%;
+    height: 100%;
+    object-fit: fill;
     a {
         color: rgb(29, 65, 11);
         font-weight: bold;
-        } 
-    }    
+        font-size: 30px;
+    }
+}
 @keyframes animacion_titulo {
     0% {text-align: left;}
     25% {text-align: center;}
