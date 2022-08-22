@@ -1,205 +1,198 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-#estiloInline {
-    display: inline;
-}
+  margin: 0;
+  padding: 0; }
+
 body {
-    background-image: linear-gradient(to top, orange, brown);
-    padding: 5px;
-}
+  background: url(../images/woodtable.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 5px; }
+
 .detallesLogo {
-    width: 100px;
-    height: 100px;
-    display: inline;
-    border-radius: 15%;
-}
-nav ul li:hover {
-    transition: 1s;
-    background-color: rgb(171, 241, 91);
-}
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+  display: inline; }
+
+#estiloInline {
+  display: inline; }
+
 nav ul li {
-    border-radius: 25%;
-}
+  border-radius: 25%; }
+  nav ul li:hover {
+    transition: 1s;
+    background-color: #abf15b; }
+
 .Navegador {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: rgba(212, 191, 73, 0.801);
-    border-radius: 15%;
-}
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(212, 191, 73, 0.801);
+  border-radius: 15%; }
+
 .header {
-    background-image: url(../images/burgerandpizza.jpg);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
+  background-image: url(../images/burgerandpizza.jpg);
+  position: sticky;
+  top: 0;
+  z-index: 999; }
+
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
 a {
-    outline: none;
-    text-decoration: none;
-    padding: 2px 1px 0;
-    color:rgb(236, 46, 25);
-    font-style: italic;
-}
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: #ec2e19;
+  font-style: italic;
+  font-weight: none; }
+
 a:hover {
-    color: chocolate;
-}
-footer {
-    text-align: center;
-}
+  color: chocolate; }
+
 #footerEnlace:hover {
-    color: chocolate;
-    background-color:rgb(99, 82, 44);
-    border-radius: 15%;
-}
+  color: chocolate;
+  background-color: #63522c;
+  border-radius: 15%; }
+
 footer:hover {
-    transform: scale(1,1.5);
-}
+  transform: scale(1, 1.5); }
+
 .h1right {
-    color:rgb(236, 46, 25);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    background-color: rgba(212, 191, 73, 0.801);
-    border-radius: 25px;
-    text-align: center;
-}
+  color: #ec2e19;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  background-color: rgba(212, 191, 73, 0.801);
+  border-radius: 25px;
+  text-align: center; }
+
 h1 {
-    text-align: center;
-    font-size: 40px;
-    color:rgb(236, 46, 25);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-}
+  text-align: center;
+  font-size: 40px;
+  color: #ec2e19;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold; }
+
 .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.1fr 1fr 0.4fr 1fr 0.2fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 20px;
+  align-items: center;
+  height: 2170px; }
+
+.grid .header {
+  grid-column: 1;
+  grid-row: 1/2; }
+
+.grid footer {
+  grid-column: 1; }
+
+section {
+  background-color: rgba(212, 191, 73, 0.801);
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 25px; }
+
+.tamanioImagenYVideo {
+  position: relative;
+  top: 2.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  object-fit: fill;
+  border-radius: 25px; }
+
+p {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  color: brown;
+  margin: 10px; }
+
+.divParrafo {
+  position: relative;
+  top: 0.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 95%;
+  object-fit: fill; }
+
+.sectionTitulo h1 {
+  animation: animacion_titulo 5s infinite;
+  animation-timing-function: linear;
+  position: relative; }
+
+@keyframes animacion_titulo {
+  0% {
+    text-align: left; }
+  25% {
+    text-align: center; }
+  50% {
+    text-align: right; }
+  75% {
+    text-align: center; }
+  100% {
+    text-align: left; } }
+
+@media screen and (max-width: 1023px) {
+  .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr 0.4fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 0.2fr;
     grid-column-gap: 8px;
     grid-row-gap: 20px;
     align-items: center;
-    height: 2170px;
-}
-.grid .header {
-    grid-column: 1;
-    grid-row: 1/2;
-}
-.grid footer {
-    grid-column: 1;
-}
-section {
-    background-color: rgba(212, 191, 73, 0.801);
-    width: 100%;
-    height: 100%;
-    object-fit: fill; 
-    border-radius: 25px;
-}
-.tamanioImagenYVideo {
-    position: relative;
-    top: 2.5%;
-    left: 2.5%;
-    width: 95%;
-    height: 95%;
-    object-fit: fill; 
-    border-radius: 25px;
-}
-p {
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 28px;
-    color: brown;
-    margin: 10px;
-}
-.divParrafo {
-    position: relative;
-    top: 0.5%;
-    left: 2.5%;
-    width: 95%;
-    height: 95%;
-    object-fit: fill; 
-}
-.sectionTitulo h1 {
-    animation: animacion_titulo 5s infinite;
-    animation-timing-function: linear;
-    position: relative;
-}
-@keyframes animacion_titulo {
-    0% {text-align: left;}
-    25% {text-align: center;}
-    50% {text-align: right;}
-    75% {text-align: center;}
-    100% {text-align: left;}
-}    
-@media screen and (max-width: 1023px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 0.2fr;
-        grid-column-gap: 8px;
-        grid-row-gap: 20px;
-        align-items: center;
-        height: 500px;
-    }
-    #estiloInline {
-        display: block;
-    }
-    .grid .header {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .grid .footer {
-        grid-column: 1/2;
-    }
-}
+    height: 500px; }
+  #estiloInline {
+    display: block; }
+  .grid .header {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .grid .footer {
+    grid-column: 1/2; } }
+
 @media screen and (max-width: 768px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 0.2fr;
-        grid-column-gap: 8px;
-        grid-row-gap: 20px;
-        align-items: center;
-        height: 2500px;
-    }
-    #estiloInline {
-        display: block;
-    }
-    .grid .header {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .grid .footer {
-        grid-column: 1/2;
-    }
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header {
-        background-image: url(../images/burgerandpizza.jpg);
-    }
-    .grid .footer {
-        grid-column: 1/2;
-    }
-    .h1right {
-        color:rgb(236, 46, 25);
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-style: italic;
-        font-weight: bold;
-        background-color: rgba(212, 191, 73, 0.801);
-        border-radius: 25px;
-        text-align: center;
-        display: none;
-    }
-}
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 0.2fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 20px;
+    align-items: center;
+    height: 2500px; }
+  #estiloInline {
+    display: block; }
+  .grid .header {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .grid .footer {
+    grid-column: 1/2; }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .header {
+    background-image: url(../images/burgerandpizza.jpg); }
+  .grid .footer {
+    grid-column: 1/2; }
+  .h1right {
+    color: #ec2e19;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgba(212, 191, 73, 0.801);
+    border-radius: 25px;
+    text-align: center;
+    display: none; } }
