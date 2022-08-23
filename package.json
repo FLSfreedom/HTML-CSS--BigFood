@@ -1,6 +1,7 @@
 {
   "name": "ideasalvadeo",
   "version": "1.0.0",
+  "description": "El proyecto es el sitio web para un restaurant de comidas ligeras. Se generaron 5 páginas HTML, cada una con su respectivo archivo css y, a su vez, estos últimos con sus scss. Se utilizó este archivo package.json para generar cada css nuevamente a partir del scss, modificando para la ruta del script build-css para conseguir cada archivo css a partir de su correspondiente css.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/FLSfreedom/IdeaSalvadeo.git"
   },
-  "author": "",
+  "author": "Salvadeo-Franco-Luis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FLSfreedom/IdeaSalvadeo/issues"
@@ -21,6 +22,5 @@
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
   },
-  "devDependencies": {},
-  "description": ""
+  "devDependencies": {}
 }
