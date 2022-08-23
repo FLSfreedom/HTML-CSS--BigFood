@@ -50,7 +50,8 @@ a {
   text-decoration: none;
   padding: 2px 1px 0;
   color: #ec2e19;
-  font-style: italic; }
+  font-style: italic;
+  font-weight: none; }
 
 a:hover {
   color: chocolate; }
@@ -67,14 +68,19 @@ section {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #0a2203; }
 
-h1 {
-  position: relative;
-  font-size: 40px;
+.h1right, h1 {
   color: #ec2e19;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   font-weight: bold;
-  padding-right: 5px; }
+  background-color: rgba(212, 191, 73, 0.801);
+  border-radius: 25px;
+  text-align: center; }
+
+h1 {
+  font-size: 40px;
+  background-color: transparent;
+  border-radius: 0%; }
 
 footer {
   text-align: center; }
@@ -91,15 +97,6 @@ footer {
   color: chocolate;
   background-color: #63522c;
   border-radius: 15%; }
-
-.h1right {
-  color: #ec2e19;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  background-color: rgba(212, 191, 73, 0.801);
-  border-radius: 25px;
-  text-align: center; }
 
 .carousel-inner {
   border-radius: 5%; }
@@ -190,5 +187,5 @@ p {
     position: static;
     top: 0;
     z-index: 999; }
-  .h1right {
+  .h1right, h1 {
     display: none; } }
