@@ -43,9 +43,12 @@ nav {
 }
 .header {
     background-image: url(../images/burgerandpizza.jpg);
-    position: static;
+    position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 0;
+    &:hover {
+        z-index: 999;
+    }
 }
 header {
     display: flex;
@@ -126,6 +129,7 @@ p {
     animation: animacion_titulo 5s infinite;
     animation-timing-function: linear;
     position: relative;
+    z-index: -1;
 }
 $fondos: (
     tonoSpecial: linear-gradient(to top, brown, beige, lightblue),
@@ -164,6 +168,8 @@ $fondos: (
         background-image: map-get($map: $fondos, $key: tonoSpecial);
         color: rgb(44, 78, 231);
         font-size: 40px;
+        animation: animacion_sidebar 15s infinite !important;
+        animation-timing-function: linear;
         &:hover {
             color: rgb(255, 153, 0);
         }
@@ -189,6 +195,13 @@ $fondos: (
     50% {text-align: right; color: darkolivegreen;}
     75% {text-align: center;}
     100% {text-align: left;}
+}   
+@keyframes animacion_sidebar {
+    0% {}
+    25% {}
+    50% {background-image: map-get($map: $fondos, $key: tono4);}
+    75% {}
+    100% {}
 }   
 @media screen and (max-width: 992px) {
     .grid {

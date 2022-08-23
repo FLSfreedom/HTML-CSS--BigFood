@@ -35,9 +35,11 @@ nav ul li {
 
 .header {
   background-image: url(../images/burgerandpizza.jpg);
-  position: static;
+  position: sticky;
   top: 0;
-  z-index: 999; }
+  z-index: 0; }
+  .header:hover {
+    z-index: 999; }
 
 header {
   display: flex;
@@ -116,7 +118,8 @@ p {
 .divtitulo1 h1 {
   animation: animacion_titulo 5s infinite;
   animation-timing-function: linear;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
 
 .div--tono1 {
   background-image: linear-gradient(to top, #e9967a, #90ee90);
@@ -145,7 +148,9 @@ p {
     border-radius: 25px;
     background-image: linear-gradient(to top, brown, beige, lightblue);
     color: #2c4ee7;
-    font-size: 40px; }
+    font-size: 40px;
+    animation: animacion_sidebar 15s infinite !important;
+    animation-timing-function: linear; }
     .menuDesktop button:hover {
       color: #ff9900; }
     .menuDesktop button:focus {
@@ -173,6 +178,14 @@ p {
     text-align: center; }
   100% {
     text-align: left; } }
+
+@keyframes animacion_sidebar {
+  0% { }
+  25% { }
+  50% {
+    background-image: linear-gradient(to top, #bb694e, #2fbb85); }
+  75% { }
+  100% { } }
 
 @media screen and (max-width: 992px) {
   .grid {
