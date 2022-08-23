@@ -56,15 +56,16 @@ a {
 a:hover {
   color: chocolate; }
 
-#footerEnlace:hover {
-  color: chocolate;
-  background-color: #63522c;
-  border-radius: 15%; }
+div.row div {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  border-radius: 25px;
+  text-align: center;
+  padding: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-footer:hover {
-  transform: scale(1, 1.5); }
-
-.h1right {
+.h1right, h1 {
   color: #ec2e19;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
@@ -74,28 +75,25 @@ footer:hover {
   text-align: center; }
 
 h1 {
-  text-align: center;
   font-size: 40px;
-  color: #ec2e19;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  font-weight: bold; }
+  background-color: transparent;
+  border-radius: 0%; }
+
+footer {
+  text-align: center; }
+  footer:hover {
+    transform: scale(1, 1.5); }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.1fr 1fr 0.4fr 1fr 0.2fr;
-  grid-column-gap: 8px;
-  grid-row-gap: 20px;
-  align-items: center;
-  height: 2170px; }
+  grid-template-rows: 0.2fr 0.1fr 3fr 0.1fr;
+  grid-row-gap: 10px; }
 
-.grid .header {
-  grid-column: 1;
-  grid-row: 1/2; }
-
-.grid footer {
-  grid-column: 1; }
+#footerEnlace:hover {
+  color: chocolate;
+  background-color: #63522c;
+  border-radius: 15%; }
 
 section {
   background-color: rgba(212, 191, 73, 0.801);
@@ -107,9 +105,9 @@ section {
 .tamanioImagenYVideo {
   position: relative;
   top: 2.5%;
-  left: 2.5%;
-  width: 95%;
-  height: 95%;
+  left: 5%;
+  width: 90%;
+  height: 520px;
   object-fit: fill;
   border-radius: 25px; }
 
@@ -119,14 +117,6 @@ p {
   font-size: 28px;
   color: brown;
   margin: 10px; }
-
-.divParrafo {
-  position: relative;
-  top: 0.5%;
-  left: 2.5%;
-  width: 95%;
-  height: 95%;
-  object-fit: fill; }
 
 .sectionTitulo h1 {
   animation: animacion_titulo 5s infinite;
@@ -139,60 +129,47 @@ p {
   25% {
     text-align: center; }
   50% {
-    text-align: right; }
+    text-align: right;
+    color: darkolivegreen; }
   75% {
     text-align: center; }
   100% {
     text-align: left; } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 992px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 0.2fr;
-    grid-column-gap: 8px;
-    grid-row-gap: 20px;
-    align-items: center;
-    height: 500px; }
+    grid-template-rows: 0.2fr 0.1fr 3fr 0.1fr;
+    grid-row-gap: 10px; }
+  .tamanioImagenYVideo {
+    position: relative;
+    top: 2.5%;
+    left: 5%;
+    width: 90%;
+    height: 400px;
+    object-fit: fill;
+    border-radius: 25px; }
   #estiloInline {
-    display: block; }
-  .grid .header {
-    grid-column: 1/2;
-    grid-row: 1/2; }
-  .grid .footer {
-    grid-column: 1/2; } }
+    display: block; } }
 
 @media screen and (max-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr 0.2fr;
-    grid-column-gap: 8px;
-    grid-row-gap: 20px;
-    align-items: center;
-    height: 2500px; }
+    grid-template-rows: 0.2fr 0.1fr 3fr 0.1fr;
+    grid-row-gap: 10px; }
   #estiloInline {
     display: block; }
-  .grid .header {
-    grid-column: 1/2;
-    grid-row: 1/2; }
-  .grid .footer {
-    grid-column: 1/2; }
   header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
   .header {
-    background-image: url(../images/burgerandpizza.jpg); }
-  .grid .footer {
-    grid-column: 1/2; }
-  .h1right {
-    color: #ec2e19;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    background-color: rgba(212, 191, 73, 0.801);
-    border-radius: 25px;
-    text-align: center;
+    background-image: url(../images/burgerandpizza.jpg);
+    position: static;
+    top: 0;
+    z-index: 999; }
+  .h1right, h1 {
     display: none; } }
