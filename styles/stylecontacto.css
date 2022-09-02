@@ -56,7 +56,7 @@ a {
 a:hover {
   color: chocolate; }
 
-.h1right, h1 {
+.hright, h1 {
   color: #ec2e19;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
@@ -151,7 +151,7 @@ dl {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
-  .h1right, h1 {
+  #displayNone {
     display: none; }
   .header {
     background-image: url(../images/burgerandpizza.jpg);

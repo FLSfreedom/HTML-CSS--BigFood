@@ -65,7 +65,7 @@ div.row div {
   padding: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-.h1right, h1 {
+.hright, h1 {
   color: #ec2e19;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
@@ -168,10 +168,10 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
+  #displayNone {
+    display: none; }
   .header {
     background-image: url(../images/burgerandpizza.jpg);
     position: static;
     top: 0;
-    z-index: 999; }
-  .h1right, h1 {
-    display: none; } }
+    z-index: 999; } }

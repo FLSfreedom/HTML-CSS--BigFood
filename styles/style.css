@@ -21,7 +21,7 @@ body {
 
 nav ul li {
   border-radius: 25%; }
-  nav ul li:hover {
+  nav ul li a:hover {
     transition: 1s;
     background-color: #abf15b; }
 
@@ -69,7 +69,7 @@ section {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #0a2203; }
 
-.h1right, h1 {
+.hright, h1 {
   color: #ec2e19;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
@@ -98,6 +98,9 @@ footer {
   color: chocolate;
   background-color: #63522c;
   border-radius: 15%; }
+
+.paddingTitulo {
+  padding-right: 2.5%; }
 
 .carousel-inner {
   border-radius: 5%; }
@@ -187,10 +190,10 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
+  #displayNone {
+    display: none; }
   .header {
     background-image: url(../images/burgerandpizza.jpg);
     position: static;
     top: 0;
-    z-index: 999; }
-  .h1right, h1 {
-    display: none; } }
+    z-index: 999; } }

@@ -76,7 +76,7 @@ div.row {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
-.h1right {
+.hright {
     color:rgb(236, 46, 25);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     @include estiloTexto(italic, bold);
@@ -85,7 +85,7 @@ div.row {
     text-align: center;
 }
 h1 {
-    @extend .h1right;
+    @extend .hright;
     font-size: 40px;
     background-color: transparent;
     border-radius: 0%;
@@ -251,7 +251,7 @@ $fondos: (
         top: 0;
         z-index: 999;
     }
-    .hright {
+    #displayNone {
         display: none;
     }
     .menuDesktop {

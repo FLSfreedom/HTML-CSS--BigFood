@@ -63,7 +63,7 @@ a {
 a:hover {
     color: chocolate;
 }
-.h1right {
+.hright {
     color:rgb(236, 46, 25);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     @include estiloTexto(italic, bold);
@@ -72,7 +72,7 @@ a:hover {
     text-align: center;
 }
 h1 {
-    @extend .h1right;
+    @extend .hright;
     font-size: 40px;
     background-color: transparent;
     border-radius: 0%;
@@ -191,13 +191,13 @@ dl {
         justify-content: space-between;
         align-items: center;
     }
+    #displayNone {
+        display: none;
+    }
     .header {
         background-image: url(../images/burgerandpizza.jpg);
         position:static;
         top: 0;
         z-index: 999;
-    }
-    .h1right {
-        display: none;
     }
 }
