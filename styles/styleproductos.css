@@ -119,7 +119,9 @@ p {
   border-radius: 25px; }
 
 .tamanioImageFinal {
-  height: 90%; }
+  height: 90%;
+  object-fit: fill;
+  border-radius: 25px; }
 
 .divtitulo1 h1 {
   animation: animacion_titulo 5s infinite;
