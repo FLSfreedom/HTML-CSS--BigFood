@@ -110,15 +110,10 @@ p {
   font-size: 28px;
   color: #ec2e19; }
 
-.tamanioImages, .tamanioImageFinal {
+.tamanioImages {
   position: relative;
   top: 2.5%;
   width: 95%;
-  height: 95%;
-  object-fit: fill;
-  border-radius: 25px; }
-
-.tamanioImageFinal {
   height: 95%;
   object-fit: fill;
   border-radius: 25px; }
@@ -234,7 +229,7 @@ p {
   #grid2 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr 0.1fr 0.4fr 0.4fr 0.1fr 0.4fr 0.1fr 0.4fr 0.5fr;
+    grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr 0.1fr 0.4fr 0.4fr 0.1fr 0.4fr 0.1fr 0.4fr 2fr;
     grid-row-gap: 10px; }
   .Navegador {
     padding-right: 4%; }
@@ -251,8 +246,4 @@ p {
   #displayNone {
     display: none; }
   .menuDesktop {
-    display: none; }
-  .tamanioImageFinal {
-    height: 75%;
-    object-fit: fill;
-    border-radius: 25px; } }
+    display: none; } }
