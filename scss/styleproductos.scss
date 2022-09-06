@@ -173,7 +173,7 @@ $fondos: (
         background-image: map-get($map: $fondos, $key: tonoSpecial);
         color: rgb(44, 78, 231);
         font-size: 40px;
-        animation: animacion_sidebar 15s infinite !important;
+        animation: animacion_sidebar 10s infinite !important;
         animation-timing-function: linear;
         &:hover {
             color: rgb(255, 153, 0);
@@ -228,7 +228,7 @@ $fondos: (
     #grid2 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 1fr 0.2fr 0.2fr 1fr 1fr 0.2fr 1fr 0.2fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr 0.1fr 0.4fr 0.4fr 0.1fr 0.4fr 0.1fr 0.4fr 0.4fr;
         grid-row-gap: 10px;
     }
     .Navegador {
@@ -242,7 +242,7 @@ $fondos: (
     .grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.1fr 22fr 0.1fr;
+        grid-template-rows: 0.2fr 0.1fr 19fr 0.1fr;
         grid-row-gap: 10px;
     }
     #estiloInline {
@@ -251,7 +251,7 @@ $fondos: (
     #grid2 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 1fr 0.2fr 0.2fr 1fr 1fr 0.2fr 1fr 0.2fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.4fr 0.1fr 0.1fr 0.4fr 0.4fr 0.1fr 0.4fr 0.1fr 0.4fr 0.4fr;
         grid-row-gap: 10px;
     }
     .Navegador {
