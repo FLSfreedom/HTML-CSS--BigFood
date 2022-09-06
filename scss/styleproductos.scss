@@ -132,7 +132,7 @@ p {
 }
 .tamanioImageFinal {
     @extend .tamanioImages;
-    height: 80%;
+    height: 95%;
     object-fit: fill; 
     border-radius: 25px;
 }
@@ -280,5 +280,10 @@ $fondos: (
     }
     .menuDesktop {
         display: none;
+    }
+    .tamanioImageFinal {
+        height: 75%;
+        object-fit: fill; 
+        border-radius: 25px;
     }
 }

@@ -119,7 +119,7 @@ p {
   border-radius: 25px; }
 
 .tamanioImageFinal {
-  height: 80%;
+  height: 95%;
   object-fit: fill;
   border-radius: 25px; }
 
@@ -251,4 +251,8 @@ p {
   #displayNone {
     display: none; }
   .menuDesktop {
-    display: none; } }
+    display: none; }
+  .tamanioImageFinal {
+    height: 75%;
+    object-fit: fill;
+    border-radius: 25px; } }
