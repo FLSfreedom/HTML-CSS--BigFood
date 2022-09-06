@@ -20,12 +20,16 @@ body {
     display: inline;
 }
 nav {
+    animation: barraNavegadorAnimacion 5s infinite;
+    animation-timing-function: linear;
     ul {
         li {
-            border-radius: 25%;
-            &:hover{
-                transition: 1s;
-                background-color: rgb(171, 241, 91);
+            a {
+                &:hover{
+                    transition: 1s;
+                    background-color: rgb(171, 241, 91);
+                    border-radius: 25%;
+                }
             }
         }
     }
@@ -40,6 +44,7 @@ nav {
     font-size: 20px;
     background-color: rgba(212, 191, 73, 0.801);
     border-radius: 15%;
+    padding-right: 2.5%;
 }
 .header {
     background-image: url(../images/burgerandpizza.jpg);
@@ -132,20 +137,33 @@ dl {
     50% {text-align: right;  color: darkolivegreen;}
     75% {text-align: center;}
     100% {text-align: left;}
-}    
+}
 @keyframes animacion_h2 {
     0% {color: rgb(10, 34, 3);}
     50% {color: rgb(236, 46, 25);}
     100% {color: rgb(10, 34, 3);}
-}    
+}
+@keyframes barraNavegadorAnimacion {
+    0% {background-color: rgba(212, 191, 73, 0.801);}
+    25% {}
+    50% {background-color: rgba(10, 34, 3, 0.801);}
+    75% {}
+    100% {background-color: rgba(212, 191, 73, 0.801);}
+}
 @media screen and (max-width: 992px) {
     #estiloInline {
         display: block;
+    }
+    .Navegador {
+        padding-right: 3.5%;
     }
 }
 @media screen and (max-width: 768px) {
     #estiloInline {
         display: block;
+    }
+    .Navegador {
+        padding-right: 4%;
     }
     header {
         display: flex;

@@ -19,11 +19,13 @@ body {
 #estiloInline {
   display: inline; }
 
-nav ul li {
-  border-radius: 25%; }
-  nav ul li:hover {
+nav {
+  animation: barraNavegadorAnimacion 5s infinite;
+  animation-timing-function: linear; }
+  nav ul li a:hover {
     transition: 1s;
-    background-color: #abf15b; }
+    background-color: #abf15b;
+    border-radius: 25%; }
 
 .Navegador {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +33,8 @@ nav ul li {
   font-weight: bold;
   font-size: 20px;
   background-color: rgba(212, 191, 73, 0.801);
-  border-radius: 15%; }
+  border-radius: 15%;
+  padding-right: 2.5%; }
 
 .header {
   background-image: url(../images/burgerandpizza.jpg);
@@ -139,13 +142,27 @@ dl {
   100% {
     color: #0a2203; } }
 
+@keyframes barraNavegadorAnimacion {
+  0% {
+    background-color: rgba(212, 191, 73, 0.801); }
+  25% { }
+  50% {
+    background-color: rgba(10, 34, 3, 0.801); }
+  75% { }
+  100% {
+    background-color: rgba(212, 191, 73, 0.801); } }
+
 @media screen and (max-width: 992px) {
   #estiloInline {
-    display: block; } }
+    display: block; }
+  .Navegador {
+    padding-right: 3.5%; } }
 
 @media screen and (max-width: 768px) {
   #estiloInline {
     display: block; }
+  .Navegador {
+    padding-right: 4%; }
   header {
     display: flex;
     flex-direction: column;
