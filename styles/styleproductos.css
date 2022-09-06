@@ -110,13 +110,16 @@ p {
   font-size: 28px;
   color: #ec2e19; }
 
-.tamanioImages {
+.tamanioImages, .tamanioImageFinal {
   position: relative;
   top: 2.5%;
   width: 95%;
   height: 95%;
   object-fit: fill;
   border-radius: 25px; }
+
+.tamanioImageFinal {
+  height: 90%; }
 
 .divtitulo1 h1 {
   animation: animacion_titulo 5s infinite;
@@ -222,7 +225,7 @@ p {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 10fr 0.1fr;
+    grid-template-rows: 0.2fr 0.1fr 15fr 0.1fr;
     grid-row-gap: 10px; }
   #estiloInline {
     display: block; }
