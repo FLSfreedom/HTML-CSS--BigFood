@@ -110,8 +110,8 @@ section {
 .tamanioImagenYVideo {
   position: relative;
   top: 2.5%;
-  left: 5%;
-  width: 90%;
+  left: 10%;
+  width: 80%;
   height: 520px;
   object-fit: fill;
   border-radius: 25px; }
@@ -162,7 +162,7 @@ p {
     top: 2.5%;
     left: 5%;
     width: 90%;
-    height: 400px;
+    height: 300px;
     object-fit: fill;
     border-radius: 25px; }
   #estiloInline {
